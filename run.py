@@ -23,7 +23,6 @@ for f in os.listdir(fruits_dir):
             c_r["name"]= opened.readline()[:-1]
             c_r["weight"]=int(opened.readline()[:-1].replace("lbs",""))
             c_r["description"]=opened.readline()[:-1]
-            #c_r["image-name"]= f.replace(".txt",".jpeg")
-            c_r["image-name"]= os.path.join(images_dir, f.replace(".txt",".jpeg"))
+            c_r["image_name"]=  f.replace(".txt",".jpeg"))
             print(c_r)
             r = requests.post(url, json=c_r)
