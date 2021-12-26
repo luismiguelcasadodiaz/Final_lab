@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Dec 25 10:04:53 2021
-
-@author: LuisMiguel
-"""
-
 #!/usr/bin/env python3
 import requests
 import os

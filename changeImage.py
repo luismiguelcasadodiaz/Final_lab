@@ -1,12 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Dec 25 10:01:13 2021
-
-@author: LuisMiguel
-"""
+#!/usr/bin/env python3
 import os
 from PIL import Image as im
 my_dir = os.path.abspath(".")
+
 original_dir = os.path.join(my_dir, "supplier-data/images")
 dest_dir = os.path.join(my_dir,"supplier-data/images")
 
