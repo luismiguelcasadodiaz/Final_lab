@@ -21,7 +21,7 @@ def report_body():
     return text
 def report_title():
     today = date.today()
-    return "Processed Update on " + today.strftime("%d/%m/%y") 
+    return "Processed Update on " + today.strftime("%B %d, %Y") 
 if __name__ == "__main__":
     parafo = report_body()
     titulo = report_title()
