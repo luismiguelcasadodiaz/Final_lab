@@ -21,7 +21,7 @@ def generate_mail(sender, receiver, subject, body, path_to_attach,filename=None 
 def send_mail(msg):
     server = smtplib.SMTP('localhost')
     server.set_debuglevel(1)
-    server.send_mail(msg)
+    server.send_message(msg)
     server.quit()
     pass
 
