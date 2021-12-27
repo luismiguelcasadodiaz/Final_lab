@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Dec 25 10:29:48 2021
-
-@author: LuisMiguel
-"""
-
 #!/usr/bin/env python3
 import requests
 import os
@@ -23,6 +16,6 @@ for f in os.listdir(fruits_dir):
             c_r["name"]= opened.readline()[:-1]
             c_r["weight"]=int(opened.readline()[:-1].replace("lbs",""))
             c_r["description"]=opened.readline()[:-1]
-            c_r["image_name"]=  f.replace(".txt",".jpeg"))
+            c_r["image_name"]=  f.replace(".txt",".jpeg")
             print(c_r)
             r = requests.post(url, json=c_r)
