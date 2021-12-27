@@ -8,8 +8,9 @@ import emails
 subject = "" 
 sender="automation@example.com"
 user=os.getenv('USER')
+if user == None:
+    user="student-02-3f27ae2b05bd"
 receiver="{}@example.com".format(user)
-
 body = "Please check your system and resolve the issue as soon as possible."
 
 
