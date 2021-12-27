@@ -2,7 +2,7 @@ import smtplib
 from email.message import EmailMessage
 import mimetypes
 import os
-def generate_mail(sender, receiver, subject, body, path_to_attach,myfilename=None ):
+def generate_mail(sender, receiver, subject, body, path_to_attach=None,myfilename=None ):
     m=EmailMessage()
     m["From"]=sender
     m["To"]=receiver
