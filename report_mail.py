@@ -40,7 +40,8 @@ if __name__ == "__main__":
     report_path = "/tmp/processed.pdf"
     reports.generate_report(report_path,titulo, parafo)
     sender="automation@example.com"
-    receiver="student-02-3f27ae2b05bd@example.com"
+    user=os.getenv('USER')
+    receiver="{}@example.com".format(user)
     subject = "Upload Completed - Online Fruit Store"
     body = "All fruits are uploaded to our website succesfully.A detailed list is attached to this email"
     filename="processed.pdf"
