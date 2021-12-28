@@ -41,6 +41,4 @@ if addr == "127.0.0.1":
     subject ="Error - localhost cannot be resolved to 127.0.0.1"
     msg=emails.generate_mail(sender, receiver, subject, body)
     emails.send_mail(msg)   
-    
-print(subject)
 
