@@ -43,8 +43,7 @@ if __name__ == "__main__":
     user=os.getenv('USER')
     receiver="{}@example.com".format(user)
     subject = "Upload Completed - Online Fruit Store"
-    body = "All fruits are uploaded to our website succesfully. A detailed list is attached to this email"
-    filename="processed.pdf"
+        body = "All fruits are uploaded to our website successfully. A detailed list is attached to this email."
     msg=emails.generate_mail(sender, receiver, subject, body, report_path)
     emails.send_mail(msg)
 
