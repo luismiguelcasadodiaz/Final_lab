@@ -6,20 +6,24 @@ import reports
 import emails
 
 def report_body():
-    text=""
+    ###text=""
     ##c_r={}
+    text=[]
     my_dir = os.path.abspath(".")
     fruits_dir = os.path.join(my_dir, "supplier-data/descriptions")
     for f in os.listdir(fruits_dir):
         if f.endswith(".txt"):
             file_path=os.path.join(fruits_dir, f)
             with open(file_path,'r') as opened:
-                c_r={}
-                c_r["name"]=opened.readline().strip('\n')
-                c_r["weigth"]=opened.readline().strip('\n')
-                for k,v in c_r.items():
-                    text = text + k + ": " + v + "<br/>"
-                text += "<br/>"
+                name=opened.readline().strip('\n')
+                weight=opened.readline().strip('\n')
+                text.append([name,weight])
+    ###            c_r={}
+    ###            c_r["name"]=opened.readline().strip('\n')
+    ###            c_r["weigth"]=opened.readline().strip('\n')
+    ###            for k,v in c_r.items():
+    ###                text = text + k + ": " + v + "<br/>"
+    ###            text += "<br/>"
     ##            name = opened.readline().strip('\n')
     ##            weigth = opened.readline().strip('\n')
     ##            if name not in c_r:
