@@ -41,7 +41,7 @@ def report_title():
 if __name__ == "__main__":
     parafo = report_body()
     titulo = report_title()
-    report_path = "/tmp/processed.pdf"
+    report_path = "processed.pdf"
     reports.generate_report(report_path,titulo, parafo)
     sender="automation@example.com"
     user=os.getenv('USER')
